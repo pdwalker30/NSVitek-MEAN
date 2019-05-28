@@ -1,0 +1,35 @@
+<div *ngFor="let item of itemArray">
+    <div class="row" id="{{item.itemId}}">
+        <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center">
+            <div class="row">
+                <div class="col-xs-12 visible-xs visible-sm" style="margin-bottom: 10px">
+                    <div class="small-picture">
+                        <div class="item-picture" [style.background-image]="'url(/assets/' + item.itemBackgroundImage + ')'"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 visible-md" style="margin-bottom: 10px">
+                    <div class="large-picture">
+                        <div class="item-picture" [style.background-image]="'url(/assets/' + item.itemBackgroundImage + ')'"></div>
+                    </div>
+                </div>
+    
+                <div *ngIf="item.showLeft" class="hidden-xs hidden-sm hidden-md col-sm-4 col-md-3 large-picture">
+                    <div class="item-picture" [style.background-image]="'url(/assets/' + item.itemBackgroundImage + ')'">                        
+                    </div>
+                </div>
+    
+                <div class="col-xs-12 col-lg-8 item-text">
+                    <div class="information-header">
+                        {{item.itemHeader}}
+                    </div>
+                    <div class="information-text" [innerHTML]="item.itemText">                        
+                    </div>
+                </div>
+    
+                <div *ngIf="item.showRight" class="hidden-xs hidden-sm hidden-md col-sm-4 col-md-3 large-picture">
+                    <div class="item-picture" [style.background-image]="'url(/assets/' + item.itemBackgroundImage + ')'">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

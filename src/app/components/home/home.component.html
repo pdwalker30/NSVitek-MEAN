@@ -1,0 +1,64 @@
+<div class="row">
+    <div class="col-lg-4 col-lg-push-1">
+        <div class="row owner-name">
+            <div class="row splash-title">
+                <div class="col-md-12 hidden-xs splash-title-top">Natasha S. Vitek</div>
+            </div>
+        </div>
+        <div class="introduction-picture-container"></div>
+    </div>
+
+
+
+    <div class="col-lg-6 col-lg-push-1 adjustable-row">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-push-1 intro-text">
+                <p>
+                    Hello! I am a paleontologist studying the evolutionary consequences of intraspecific variation in the fossil record.
+                    Using morphometrics, genomics, and museum collections I integrate modern studies of microevolution with the long timescales
+                    of the fossil record. I am currently a PhD candidate in Dr. Jonathan Bloch's lab, University of Florida and the Florida Museum of
+                    Natural History.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center researchheader">
+                <h2 class="title-text">Research</h2>
+            </div>
+        </div>
+
+        <!--Repeat topics-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center">                
+                <div *ngFor="let item of researchItems" class="col-md-4 col-sm-6 col-xs-12 col-lg-2">
+                    <div class="research-picure">
+                        <a [routerLink]="['/research']" 
+                        fragment="{{item.itemId}}" 
+                        class="small-picture"
+                        [style.background-image]="'url(/assets/' + item.itemBackgroundImage + ')'"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center researchheader outreach-header">
+                <h2 class="title-text">Outreach</h2>
+            </div>
+        </div>
+        <!--Outreach topics-->
+        <div class="row outreach-body">
+            <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center">
+                <div *ngFor="let item of outreachItems" class="col-md-4 col-sm-6 col-xs-12 col-lg-2">
+                    <div class="research-picure">
+                        <a [routerLink]="['/outreach']" 
+                        fragment="{{item.itemId}}" 
+                        class="small-picture"
+                        [style.background-image]="'url(/assets/' + item.itemBackgroundImage + ')'"></a>
+                    </div>
+                </div>               
+            </div>            
+        </div>
+    </div>
+</div>

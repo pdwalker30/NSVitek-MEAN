@@ -1,0 +1,44 @@
+
+
+.large-picture {
+    min-height: 250px;
+    min-width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.small-picture {
+    min-height: 150px;
+    min-width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.item-picture {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin: auto;
+    min-height: 150px;
+}
+
+.large-picture > .item-picture {
+    min-height: 350px;
+}
+
+.research-text {
+    vertical-align: middle;
+}
+
+.information-header {    
+    font-size: 24px;
+    font-weight: bold;
+}
+/* Fix for pictures on smaller screens */
+
+@media (max-width: 1200px) {
+    .item-picture {
+       background-position: center;
+    }
+}

@@ -1,0 +1,131 @@
+﻿.title-text{
+    margin-bottom: 10px;    
+    font-weight: bold;
+}
+
+.summary-text {
+    border-bottom: 1px solid black; 
+    border-top: 1px solid black; 
+    margin-bottom: 30px; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.research-large-picture{
+    min-height: 250px;
+    min-width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.research-small-picture{
+    min-height: 150px;
+    min-width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.research1 {
+    background-image: url("/assets/research_boxturtle_01.png");
+    background-repeat: no-repeat;    
+    background-size: contain;
+    display: block;
+    margin: auto;
+    min-height: 150px;
+}
+
+.research2 {
+    background-image: url("/assets/research_softshell_01.png");
+    background-repeat: no-repeat;    
+    background-size: contain;
+    display: block;
+    min-height: 150px;
+}
+
+.research3 {
+    background-image: url("/assets/research_feathers.png");
+    background-repeat: no-repeat;    
+    background-size: contain;
+    display: block;
+    min-height: 150px;
+}
+
+.research4 {
+    background-image: url("/assets/research_fossilmammals_01.png");
+    background-repeat: no-repeat;    
+    background-size: contain;
+    display: block;
+    min-height: 150px;
+}
+
+.research5 {
+    background-image: url("/assets/research_modern_mammals_03.png");
+    background-repeat: no-repeat;    
+    background-size: contain;
+    display: block;
+    min-height: 150px;
+}
+
+.research-large-picture>.research1, .research-large-picture>.research2,
+.research-large-picture>.research3, .research-large-picture>.research4,
+.research-large-picture>.research5 {
+    min-height: 350px;
+}
+
+.research-text{
+    vertical-align:middle;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+.research-title {    
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.undergrad{
+    border: 1px solid black;    
+    width: 25%;
+    height: 50px;
+    text-align: center;
+}
+.undergrad .name {
+    font-weight: bold;
+}
+
+.undergrad-project{
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.undergrad-table{
+    margin-bottom: 15px;
+}
+
+.undergrad-table-title {    
+    text-align: center;    
+    font-size: 24px;
+    font-weight: bold;    
+}
+
+/* Fix for pictures on smaller screens */
+
+@media (max-width: 1200px) {
+    .research1 {
+       background-position: center;
+    }
+
+    .research2 {
+       background-position: center;
+    }
+    .research3 {
+       background-position: center;
+    }
+    .research4 {
+       background-position: center;
+    }
+    .research5 {
+       background-position: center;
+    }
+}

@@ -1,0 +1,187 @@
+﻿/* THESE SHOULD BE REFACTORED INTO A COMPONENT */
+
+.research1 {
+    background-image: url("/assets/research_boxturtle_01.png");
+}
+
+.research2 {
+    background-image: url("/assets/research_softshell_01.png");
+}
+
+.research3 {
+    background-image: url("/assets/research_feathers.png");
+}
+
+.research4 {
+    background-image: url("/assets/research_fossilmammals_01.png");    
+}
+
+.research5 {
+    background-image: url("/assets/research_modern_mammals_03.png");
+}
+
+.research-picure {
+    min-height: 150px;
+    min-width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.researchheader {
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+}
+
+
+.small-picture {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    min-height: calc(13vh);
+}
+
+
+.outreach1 {
+    background-image: url("/assets/outreach_3dprints_01.png");
+}
+
+.outreach2 {
+    background-image: url("/assets/outreach_fossilroulette.png");
+}
+
+.outreach3 {
+    background-image: url("/assets/outreach_exhibitsetc_01.png");
+}
+
+.outreach-header {
+    margin-top: 15px;
+}
+
+.outreach-body {
+    margin-bottom: 20px !important;
+}
+
+.introduction-picture-container {
+    background-image: url("/assets/tumblr_lva0nlz4yv1r2rhgno1_1280.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    min-height: calc(100vh - 140px);
+    position: relative;
+    clip-path: circle(250px at 50% 38%);
+    margin-bottom: -90px;
+}
+
+
+.intro-text {
+    margin-top: 85px;
+}
+
+.splash-title-top {
+    margin-top: 75px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+
+
+.splash-title {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.splash-title-bottom {
+    padding-top: 0px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.splash-title-divider {
+    background-color: black;
+    border-top: 1px solid black;
+    width: 30%;
+}
+
+.title-text {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*Laptop ratio for pictures*/
+@media (min-width: 1380px) and (max-width: 1600px) and (orientation: landscape) {
+    .small-picture {
+        min-height: calc(11vh);
+    }
+}
+
+
+/*mobile picture sizes*/
+@media (max-width: 768px) {
+    .small-picture {
+        min-height: 150px;
+    }
+}
+
+
+
+
+/*IPAD portrait*/
+@media (min-width: 767px) and (max-width: 1000px) and (orientation:portrait) {
+    .adjustable-row {
+        margin-top: -350px;
+    }
+
+    .splash-title-top {
+        margin-top: 5px;
+    }
+
+    .introduction-picture-container {
+        margin-top: -75px;
+    }
+}
+
+/*IPAD landscape*/
+@media (min-width: 1020px) and (max-width: 1025px) and (orientation:landscape) {
+    .adjustable-row {
+        margin-top: -200px;
+    }
+
+    .splash-title-top {
+        margin-top: 5px;
+    }
+}
+
+/*IPAD PRO*/
+@media (min-width: 1001px) and (max-width: 1025px) and (orientation:portrait) {
+    .adjustable-row {
+        margin-top: -500px;
+    }
+
+    .splash-title-top {
+        margin-top: 5px;
+    }
+
+    .introduction-picture-container {
+        margin-top: -175px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1368px) and (orientation:landscape) {
+    .introduction-picture-container {
+        margin-top: -125px;
+    }
+
+    .splash-title-top {
+        margin-top: 5px;
+    }
+
+    .owner-name {
+        margin-top: 70px !important;
+    }
+
+    .small-picture {
+        min-height: calc(8vh);
+    }
+}

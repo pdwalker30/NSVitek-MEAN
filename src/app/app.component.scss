@@ -1,0 +1,56 @@
+﻿
+/*
+    Orange:         #dd9d02
+    Beige:          #c0ab87
+    White:          #d0d1d1
+    Light Green:    #576a3d
+    Dark Green:     #053625
+*/
+
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    /*background-color: #d0d1d1;*/
+}
+
+.title-text{
+    margin-bottom: 10px;    
+    font-weight: bold;
+}
+
+.researchheader {
+    border-bottom: 5px solid black;
+}
+
+.container-fluid > .row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-body{
+    min-height: calc(100vh - 120px);
+    /*background: linear-gradient(#6C9AC3, #E28F41);*/
+    background-color: #E6E9ED;
+    margin-top: 50px;
+    /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    /*filter: grayscale(100%);*/
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .content-body {
+        
+    }
+}

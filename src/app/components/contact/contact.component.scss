@@ -1,0 +1,37 @@
+﻿.contact > ul > li {
+    display: inline-block;
+    margin-left: 40px;
+    text-align: center;
+    color: #d0d1d1;
+}
+
+
+
+.contact > a, .contact > ul > li > h3 {
+    color: #d0d1d1;
+}
+
+.contact > ul > li > h3 > a:hover {
+    color: #c0ab87;
+    text-decoration: none;
+}
+
+.contact {
+    text-align: center;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .contact {
+        text-align: left;
+    }
+}
+
+
+/*IPAD*/
+@media only screen and (min-width : 768px) and (max-width : 1000px) and (orientation: portrait) {
+    .contact > ul > li {
+        margin-left: 10px;
+    }
+}
+

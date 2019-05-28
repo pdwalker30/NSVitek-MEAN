@@ -1,0 +1,99 @@
+﻿<div class="row">
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center">
+            <div>
+                <h2 class="title-text">Publications</h2>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-sm-push-1 summary-text">            
+            <p>
+                * In order to keep this page current, its information is pulled directly from ORCiD instead of being typed in manually. 
+                Unfortunately, ORCiD does not allow me to input co-author information on citations that need manual edits. In order to avoid shortchanging 
+                some colleagues but not others I purposefully left all authors off of this page. Please see my CV or the links provided below for authorship information.
+            </p>
+        </div>
+    </div>
+    <!--<div class="row">        
+        <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center">
+            <div>
+                <h2 class="title-text">
+                    ORCiD is currently undergoing changes on their public API.  When they have finished updating I will update and populate this section again.
+                    Until then, please see my CV or visit my <a href="https://orcid.org/0000-0003-0587-8907"> ORCiD page.</a>
+                </h2>
+            </div>
+        </div>
+    </div>-->
+
+    <div [ngClass]="{isBusy: busy}">
+        <div class="row">
+            <div *ngFor="let work of orcidData?.works" class="row">
+                <div class="col-xs-12 col-sm-10 col-lg-6 col-lg-push-3 col-sm-push-1 orcid-work-groupings">
+                    <div *ngIf="work.workType == 'JOURNAL_ARTICLE'">
+                        <div class="publication-work-type">
+                            Journal Articles -
+                        </div>
+                        <div class="publication-information">
+                            <ul>
+                                <li *ngFor="let workItem of work.grouping">
+                                    Author: *,
+                                    {{workItem.publicationYear}}.
+                                    {{workItem.title}}.
+                                    <i>{{workItem.journalTitle}}</i>.
+                                    <span *ngIf="workItem.doiString">
+                                        <a href="{{doiUrl}}{{workItem.doiString}}">DOI:{{workItem.doiString}}</a>
+                                    </span>
+                                    <span *ngIf="workItem.doiString === null && workItem.url">
+                                        <a href="{{workItem.url}}">Link.</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div *ngIf="work.workType == 'BOOK_CHAPTER'">
+                        <div class="publication-work-type">
+                            Book Chapters -
+                        </div>
+                        <div class="publication-information">
+                            <ul>
+                                <li *ngFor="let workItem of work.grouping">
+                                    Author: *,
+                                    {{workItem.publicationYear}}.
+                                    {{workItem.title}}.
+                                    <span *ngIf="workItem.journalTitle"><i>{{workItem.journalTitle}}</i>. </span>
+                                    <span *ngIf="workItem.doiString">
+                                        <a href="{{doiUrl}}{{workItem.doiString}}">DOI:{{workItem.doiString}}</a>
+                                    </span>
+                                    <span *ngIf="workItem.doiString === null && workItem.url">
+                                        <a href="{{workItem.url}}">Link.</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div *ngIf="work.workType == 'CONFERENCE_ABSTRACT'">
+                        <div class="publication-work-type">
+                            Conference Abstracts -
+                        </div>
+                        <div class="publication-information">
+                            <ul>
+                                <li *ngFor="let workItem of work.grouping">
+                                    Author: *,
+                                    {{workItem.publicationYear}}.
+                                    {{workItem.title}}.
+                                    <span *ngIf="workItem.journalTitle"><i>{{workItem.journalTitle}}</i>. </span>
+                                    <span *ngIf="workItem.doiString">
+                                        <a href="{{doiUrl}}{{workItem.doiString}}">DOI:{{workItem.doiString}}</a>
+                                    </span>
+                                    <span *ngIf="workItem.doiString === null && workItem.url">
+                                        <a href="{{workItem.url}}">Link.</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
