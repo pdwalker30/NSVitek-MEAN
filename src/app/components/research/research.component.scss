@@ -26,47 +26,6 @@
 }
 
 
-.research1 {
-    background-image: url("/assets/research_boxturtle_01.png");
-    background-repeat: no-repeat;    
-    background-size: contain;
-    display: block;
-    margin: auto;
-    min-height: 150px;
-}
-
-.research2 {
-    background-image: url("/assets/research_softshell_01.png");
-    background-repeat: no-repeat;    
-    background-size: contain;
-    display: block;
-    min-height: 150px;
-}
-
-.research3 {
-    background-image: url("/assets/research_feathers.png");
-    background-repeat: no-repeat;    
-    background-size: contain;
-    display: block;
-    min-height: 150px;
-}
-
-.research4 {
-    background-image: url("/assets/research_fossilmammals_01.png");
-    background-repeat: no-repeat;    
-    background-size: contain;
-    display: block;
-    min-height: 150px;
-}
-
-.research5 {
-    background-image: url("/assets/research_modern_mammals_03.png");
-    background-repeat: no-repeat;    
-    background-size: contain;
-    display: block;
-    min-height: 150px;
-}
-
 .research-large-picture>.research1, .research-large-picture>.research2,
 .research-large-picture>.research3, .research-large-picture>.research4,
 .research-large-picture>.research5 {
@@ -81,32 +40,6 @@
 .research-title {    
     font-size: 24px;
     font-weight: bold;
-}
-
-.undergrad{
-    border: 1px solid black;    
-    width: 25%;
-    height: 50px;
-    text-align: center;
-}
-.undergrad .name {
-    font-weight: bold;
-}
-
-.undergrad-project{
-    padding: 10px;
-    border: 1px solid black;
-    text-align: left;
-}
-
-.undergrad-table{
-    margin-bottom: 15px;
-}
-
-.undergrad-table-title {    
-    text-align: center;    
-    font-size: 24px;
-    font-weight: bold;    
 }
 
 /* Fix for pictures on smaller screens */

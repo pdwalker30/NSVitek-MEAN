@@ -1,4 +1,4 @@
-﻿import { DOCUMENT } from "@angular/platform-browser";
+﻿import { DOCUMENT } from "@angular/common";
 import { Injectable, Inject } from "@angular/core";
 
 @Injectable()
@@ -34,5 +34,9 @@ export class EventDispatcherService {
         }
 
         return customEvent;
+    }
+
+    public listenForEvent(eventType: string, handleEvent: Function){
+        this._document.addEventListener(eventType, handleEvent(eventType));
     }
 }

@@ -13,6 +13,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { OutreachComponent } from './components/outreach/outreach.component';
 import { PictureItemComponent } from './components/picture_item/picture-item.component';
 import { PublicationsComponent } from './components/publications/publications.component';
+import { JoinLabComponent } from './components/join/join-lab.component';
+import { LabPeopleComponent } from './components/people/lab-people.component';
 
 //SERVICES
 import { MTService } from './services/mt.service';
@@ -30,7 +32,9 @@ import { PictureItemsService } from './services/picture-items.service';
         ContactComponent,
         OutreachComponent,
         PictureItemComponent,
-        PublicationsComponent
+        PublicationsComponent,
+        JoinLabComponent, 
+        LabPeopleComponent
     ],
     providers: [
         MTService,
@@ -47,6 +51,8 @@ import { PictureItemsService } from './services/picture-items.service';
             { path: 'resources', component: ResourcesComponent },
             { path: 'publications', component: PublicationsComponent },
             { path: 'outreach', component: OutreachComponent },
+            { path: 'join', component: JoinLabComponent },
+            { path: 'people', component: LabPeopleComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]

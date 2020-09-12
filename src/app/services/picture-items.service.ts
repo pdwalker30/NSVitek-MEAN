@@ -5,11 +5,13 @@ import { PictureItem } from "../utilities/picture-item";
 export class PictureItemsService {
     private OutreachItems: PictureItem[] = [];
     private ResearchItems: PictureItem[] = [];
+    private LabPeopleItems: PictureItem[] = [];
 
 
     constructor() {
         this.setupOutreachItems();
         this.setupResearchItems();
+        this.setupLabPeopleItems();
     }
 
     private setupOutreachItems() {
@@ -162,6 +164,58 @@ export class PictureItemsService {
         this.ResearchItems.push(item5);
     }
 
+    private setupLabPeopleItems() {
+        let item1Text = 
+        `<p>
+            Principal Investigator. I am a paleontologist studying the evolutionary consequences of intraspecific variation in the fossil record. Using morphometrics, genomics, and museum collections I integrate modern studies of microevolution with the long timescales of the fossil record. I am an assistant professor in the <a href="https://www.stonybrook.edu/ecoevo/">Department of Ecology & Evolution</a> at Stony Brook University. There are current openings for PhD students to <a href="https://www.nsvitek.com/join">join my lab</a> and develop projects.
+        </p>`;
+        let item1 = new PictureItem("natasha", "natasha.jpg", "Natasha S. Vitek", item1Text, "showLeft");
+
+        let item2Text = 
+        `<p>
+            PhD Student. I received my Bachelor of Science in Zoology at SUNY Oswego where my research focused on assessing disparity in cranial shape in relation to ecology within a group of limbless geckos known as pygopodids. Currently, I am a graduate student in the Vitek lab focusing on vertebrate osteology. I am interested in utilizing methods such as geometric morphometrics and finite element analysis to study functional morphology over different time scales in reptiles.
+        </p>`;
+        let item2 = new PictureItem("George-Gurgis", "George-Gurgis.jpg", "George Gurgis", item2Text, "showLeft");
+
+        let item3Text = 
+        `<p>
+            PhD Student. I came to the Vitek Lab in 2020 after graduating from the University of Akron with a B.S. in Biology and Psychology. During her undergraduate career, I studied the behavior and morphology of adhesive geckos and anoles. Now, I hope to continue to study morphology in extinct and extant reptiles.
+        </p>`;
+        let item3 = new PictureItem("Alex-Pamfilie", "Alex-Pamfilie.jpg", "Alexandra Pamfilie", item3Text, "showLeft");
+
+        let item4Text = 
+        `<p>
+            Undergraduate Student.
+        </p>`;
+        let item4 = new PictureItem("Hui-Chen", "Hui-Chen.jpg", "Hui (Jason) Chen", item4Text, "showLeft");
+
+        let item5Text = 
+        `<p>
+            Undergraduate Student.
+        </p>`;
+        let item5 = new PictureItem("Milka-Espinal", "Milka-Espinal.jpg", "Milka Espinal", item5Text, "showLeft");
+
+        let item6Text = 
+        `<p>
+            Undergraduate Student. I am an incoming senior majoring in Biology and minoring in Sociology. After recently joining this lab, my research will include analyzing tooth morphology through microCT scans, in mice. Other than research in this lab, I spent a semester in Tel Aviv University analyzing trabecular and cortical bone through microCT scans in mice. Some of my favorite hobbies include volunteering in the community, traveling, and playing violin. After graduating from Stony Brook University in the Spring, I plan on attending Dental School to pursue a degree in orthodontics.
+        </p>`;
+        let item6 = new PictureItem("Ella-Saks", "Ella-Saks.jpg", "Ella Saks", item6Text, "showLeft");
+
+        let item7Text = 
+        `<p>
+            High School Student.
+        </p>`;
+        let item7 = new PictureItem("Rhianna-Schantz", "Rhianna-Schantz.jpg", "Rhianna Schantz", item7Text, "showLeft");
+
+        this.LabPeopleItems.push(item1);
+        this.LabPeopleItems.push(item2);
+        this.LabPeopleItems.push(item3);
+        this.LabPeopleItems.push(item4);
+        this.LabPeopleItems.push(item5);
+        this.LabPeopleItems.push(item6);
+        this.LabPeopleItems.push(item7);
+    }
+
     public getOutreachItems(): PictureItem[] {
         return this.OutreachItems;
     }
@@ -169,5 +223,9 @@ export class PictureItemsService {
     public getResearchItems(): PictureItem[] {
         return this.ResearchItems;
     }
+
+    public getLabPeopleItems(): PictureItem[] {
+        return this.LabPeopleItems;
+    } 
 }
 

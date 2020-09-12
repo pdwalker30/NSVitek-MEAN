@@ -1,25 +1,4 @@
-﻿/* THESE SHOULD BE REFACTORED INTO A COMPONENT */
-
-.research1 {
-    background-image: url("/assets/research_boxturtle_01.png");
-}
-
-.research2 {
-    background-image: url("/assets/research_softshell_01.png");
-}
-
-.research3 {
-    background-image: url("/assets/research_feathers.png");
-}
-
-.research4 {
-    background-image: url("/assets/research_fossilmammals_01.png");    
-}
-
-.research5 {
-    background-image: url("/assets/research_modern_mammals_03.png");
-}
-
+﻿
 .research-picure {
     min-height: 150px;
     min-width: 150px;
@@ -41,19 +20,6 @@
     min-height: calc(13vh);
 }
 
-
-.outreach1 {
-    background-image: url("/assets/outreach_3dprints_01.png");
-}
-
-.outreach2 {
-    background-image: url("/assets/outreach_fossilroulette.png");
-}
-
-.outreach3 {
-    background-image: url("/assets/outreach_exhibitsetc_01.png");
-}
-
 .outreach-header {
     margin-top: 15px;
 }
@@ -63,15 +29,14 @@
 }
 
 .introduction-picture-container {
-    background-image: url("/assets/tumblr_lva0nlz4yv1r2rhgno1_1280.jpeg");
+    background-image: url("/assets/Lab-Image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     display: block;
-    min-height: calc(100vh - 140px);
+    min-height: calc(55vh - 140px);
+    clip-path: circle(400px at 50% 25%);
     position: relative;
-    clip-path: circle(250px at 50% 38%);
-    margin-bottom: -90px;
 }
 
 

@@ -1,8 +1,11 @@
 <div class="row">
+    
+
+
     <div class="col-lg-4 col-lg-push-1">
         <div class="row owner-name">
             <div class="row splash-title">
-                <div class="col-md-12 hidden-xs splash-title-top">Natasha S. Vitek</div>
+                <div class="col-md-12 hidden-xs splash-title-top">The Vitek Lab</div>
             </div>
         </div>
         <div class="introduction-picture-container"></div>
@@ -14,20 +17,23 @@
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-sm-push-1 intro-text">
                 <p>
-                    Hello! I am a paleontologist studying the evolutionary consequences of intraspecific variation in the fossil record.
-                    Using morphometrics, genomics, and museum collections I integrate modern studies of microevolution with the long timescales
-                    of the fossil record. I am currently a PhD candidate in Dr. Jonathan Bloch's lab, University of Florida and the Florida Museum of
-                    Natural History.
+                    Welcome! We are a lab bridging vertebrate morphology, paleontology, and evolution with the aim of 
+                    understanding how species survive on a constantly changing planet. We are members of the 
+                    <a href="https://www.stonybrook.edu/ecoevo/">Department of Ecology & Evolution</a> at Stony Brook University. 
+                    Until a receded pandemic allows us to gather in-person, please imagine the lab with the same spirit and 
+                    sense of adventure as <a href="http://hdl.handle.net/10079/digcoll/4339968"> O. C. Marsh's 1872 
+                    paleontological field crew</a>, just with fewer hats.
                 </p>
             </div>
         </div>
+        
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center researchheader">
                 <h2 class="title-text">Research</h2>
             </div>
         </div>
 
-        <!--Repeat topics-->
+        <!--Research topics-->
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center">                
                 <div *ngFor="let item of researchItems" class="col-md-4 col-sm-6 col-xs-12 col-lg-2">
@@ -53,6 +59,25 @@
                 <div *ngFor="let item of outreachItems" class="col-md-4 col-sm-6 col-xs-12 col-lg-2">
                     <div class="research-picure">
                         <a [routerLink]="['/outreach']" 
+                        fragment="{{item.itemId}}" 
+                        class="small-picture"
+                        [style.background-image]="'url(/assets/' + item.itemBackgroundImage + ')'"></a>
+                    </div>
+                </div>               
+            </div>            
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center researchheader outreach-header">
+                <h2 class="title-text">People</h2>
+            </div>
+        </div>
+        <!--Outreach topics-->
+        <div class="row outreach-body">
+            <div class="col-xs-12 col-sm-10 col-sm-push-1 text-center">
+                <div *ngFor="let item of peopleItems" class="col-md-4 col-sm-6 col-xs-12 col-lg-2">
+                    <div class="research-picure">
+                        <a [routerLink]="['/people']" 
                         fragment="{{item.itemId}}" 
                         class="small-picture"
                         [style.background-image]="'url(/assets/' + item.itemBackgroundImage + ')'"></a>

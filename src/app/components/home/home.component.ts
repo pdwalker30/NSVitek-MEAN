@@ -11,9 +11,11 @@ import { IPictureItem } from '../../types/types';
 export class HomeComponent {
     public researchItems: IPictureItem[] = [];
     public outreachItems: IPictureItem[] = [];
+    public peopleItems: IPictureItem[] = [];
 
     constructor(pictureItemService: PictureItemsService) {
         this.researchItems = pictureItemService.getResearchItems();
         this.outreachItems = pictureItemService.getOutreachItems();
+        this.peopleItems = pictureItemService.getLabPeopleItems();
     }
 }

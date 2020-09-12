@@ -91,6 +91,22 @@
                             Outreach
                         </a>
                     </li>
+                    <li [routerLinkActive]="['active']">
+                        <!--<a [routerLink]="['/outreach']">
+                            <span class='fa fa-university'></span> Outreach
+                        </a>-->
+                        <a [routerLink]="['/people']">
+                            People
+                        </a>
+                    </li>
+                    <li [routerLinkActive]="['active']">
+                        <!--<a [routerLink]="['/outreach']">
+                            <span class='fa fa-university'></span> Outreach
+                        </a>-->
+                        <a [routerLink]="['/join']">
+                            Join
+                        </a>
+                    </li>
                     <li role="separator" class="visible-xs">
                         <hr />
                     </li>
@@ -99,7 +115,7 @@
                             <span class='fa fa-download'></span> Curriculum Vitae
                         </a>-->
                         <a (click)="GetCV()" style="cursor: hand; cursor: pointer; ">
-                            Curriculum Vitae
+                            CV
                         </a>
                     </li>
                 </ul>
@@ -151,6 +167,14 @@
                         Outreach
                     </a>
                 </li>
+                <li [routerLinkActive]="['active']">
+                    <!--<a [routerLink]="['/outreach']">
+                        <span class='fa fa-university'></span> Outreach
+                    </a>-->
+                    <a [routerLink]="['/join']">
+                        Join My Lab
+                    </a>
+                </li>
                 <li role="separator" class="visible-xs visible-sm">
                     <hr />
                 </li>
@@ -169,7 +193,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="mailto:nvitek@ufl.edu" class="fa fa-envelope"> Email</a>
+                            <a href="mailto:natasha.vitek@stonybrook.edu" class="fa fa-envelope"> Email</a>
                         </li>
                         <li>
                             <a href="https://twitter.com/nsvitek" class="fa fa-twitter-square"> Twitter</a>
